@@ -8,4 +8,9 @@ app.listen(port, ()=>{
     console.log(`Server is listening at port ${port}`);
 });
 
+app.get('/',(req,res)=>{
+    //res.send("Hello World!");
+    res.json({'message':'Hello World!'})
+})
+
 export default app;
